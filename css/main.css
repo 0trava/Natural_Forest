@@ -39,14 +39,47 @@ body{
 .layers__container{
     height: 100vh;
     transform-style: preserve-3d;
+    transform: rotateY(var(--move-x)) rotateX(var(--move-y));
 
 }
 
 .layers__item{
     position: absolute;
-    inset: -5vw;
+    inset: -5vw;/* На замену top, bottom,left,right */
     background-size: cover;
     background-position: center;
     transform: rotateY(var(--move-x)) rotateX(var(--move-y));
 }
+
+.layer-1 {
+    transform: translateZ(0);
+}
+
+.layer-2 {
+    transform: translateZ(80px);
+
+}
+
+.layer-3 {
+    transform: translateZ(180px);
+
+}
+
+.layer-4 {
+    transform: translateZ(190px);
+
+}
+
+.layer-5 {
+    transform: translateZ(300px);
+
+}
+
+.layer-6 {
+    transform: translateZ(380px);
+
+}
+
+
+
 
