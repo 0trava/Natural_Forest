@@ -43,8 +43,10 @@ body{
 
 .layers__container{
     height: 100vh;
+    min-height: 500px;
     transform-style: preserve-3d;
     transform: rotateY(var(--move-x)) rotateX(var(--move-y));
+    will-change: transform; /* Для апартного ускорения */
 
 }
 
@@ -54,6 +56,10 @@ body{
     background-size: cover;
     background-position: center;
     transform: rotateY(var(--move-x)) rotateX(var(--move-y));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .layer-1 {
@@ -83,6 +89,18 @@ body{
 .layer-6 {
     transform: translateZ(380px) scale(.88);
 
+}
+
+.hero-content{
+    font-size: calc(var(--index) * 2.9);
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+.hero-content span {
+    display: block;
 }
 
 
