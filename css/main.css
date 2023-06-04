@@ -31,3 +31,24 @@ body{
     background-repeat: no-repeat;
 }
 
+.layers{
+    perspective: 1000px;
+}
+
+.layers__container{
+    height: 100vh;
+    transform-style: preserve-3d;
+
+}
+
+.layers__item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transform: rotateX(var(--move-x)) rotateY(var(--move-y));
+}
+
