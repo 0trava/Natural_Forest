@@ -105,8 +105,10 @@ body{
 
 }
 
-.hero-content span {
+.hero-content span a {
     display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .hero-content__p {
@@ -119,6 +121,7 @@ body{
 
 .button-start{
     font-family: Arial;
+    text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
     font-size: calc(var(--index) * .71);
@@ -129,6 +132,11 @@ body{
     border-radius: 10em;
     border: rgb(255 255 255 / .4) 3px solid;
     outline: none;
+}
+
+.button-start:hover, .button-start:focus{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 
 }
 
